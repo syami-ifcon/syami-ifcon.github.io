@@ -1,0 +1,198 @@
+
+<!-- Skeleton HTML -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+		<!-- metadata goes here -->
+        <title>Hello World!</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="">
+	<style type="text/css">
+		
+/*CSS Styles go here*/
+
+h1{
+    color: #F70757;
+    font-family: "Arial";
+}
+
+body {
+	background: gray;
+}
+
+header {
+	background-image: url(http://ce-sample-3.pancakeapps.com/images/food.png);
+	text-align: center;
+	color:orangered;
+} 
+
+section{
+	background:white;
+	border: 5px dotted orange;
+} 
+
+header,section {
+	padding:20px;
+	margin: 20px 50px;
+	border-radius:12px;
+}
+
+header {
+	
+}
+
+p {
+	text-align: center;
+	font-size:18px;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+h2 {
+	color:orangered;
+}
+
+table,tr,td {
+	border-width:1px;
+	border-style:dotted;
+	border-color:black;
+	border-collapse: collapse;
+}
+
+td {
+	padding:5px;
+}
+
+.white {
+  background-color: yellow;
+}
+
+.blue-text {
+  color: blue;
+}
+	</style>
+
+	<body>
+        <article>
+            <header>
+                <img id="my-face" src="https://www.nextacademy.com/blog/wp-content/uploads/2018/01/benefits-dm-love.jpg">
+
+                <h1 id="name">Rey the Jedi Girl</h1>  
+                <p>Hello there! I'm learning <strong id="topic">HTML and CSS</strong> at <em id="place">NEXT Academy</em></p>
+ 
+                <p>
+                   I am a jedi by day, a coder by night.<br>
+                    I am here at
+                    <a href="https://www.nextacademy.com">NEXT Academy</a> most days.
+                </p>
+            </header>
+
+            <!-- Skills and education Section -->
+            <section>
+                <h2>Skills</h2>
+
+                <img src="https://www.wired.com/images_blogs/underwire/2010/11/ahsoka_660.jpg">
+
+                <ul id="skills-list">
+                    <li>Coding HTML/CSS</li>
+                    <li>Web Development</li>
+                    <li>Lightsabering</li>
+                    <li class="white">Admiring Ahsoka</li>
+                </ul>
+
+                <h2>Education</h2>
+
+                <ol id="education-list">
+                    <li>Luke Skywalker Academy</li>
+                    <li>The Rebel Academy</li>
+                </ol>
+            </section>
+
+            <!-- Employment section -->
+            <section>
+                <h2>Employment</h2>
+
+                <table id="employment-table">
+                    <tr>
+                        <td>Jedi</td> <td>The Lalaxy</td> <td> 30 ABY - 35 ABY</td>
+                    </tr>
+
+                    <tr>
+                        <td>Trash Collector</td> <td>Jakku</td> <td> 15 ABY - 30 ABY</td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+
+        <script type="text/javascript">
+        	tit = document.querySelector('title');
+        	tit.innerHTML = 'GO DIE';
+        	document.getElementById('my-face').src = 'https://theultralinx.com/.image/t_share/MTM2NjQxNDE4MDQyMDI1NTY3/batman-joker-animated-gif-1gif.gif';
+        	document.querySelector('body').style.backgroundColor = 'black'; 
+        	document.querySelector('body').style.textAlign = 'center';
+        	document.querySelector('body').style.fontFamily = 'Lato';
+        	document.querySelector('body').style.color = 'white !important'; 
+        	document.querySelector('h1').style.color = 'white'; 
+        	document.querySelector('h1').innerHTML = 'NOBODY';
+        	document.querySelectorAll('p')[0].style.color = 'white'; 
+        	document.querySelectorAll('p')[0].innerHTML = 'Hello there! I\'m learning <strong style="color: red;">NOTHING</strong>';
+        	document.querySelectorAll('p')[1].innerHTML = 'Just Learning To Kill You<br/>HAHAHHAHHA';
+        	document.querySelectorAll('p')[1].style.color = 'white';
+        	document.querySelectorAll('section')[1].style.backgroundColor = 'grey';
+        	document.querySelectorAll('section')[1].style.width = '30%';
+        	document.querySelectorAll('section')[1].style.margin = 'auto';
+        	document.querySelectorAll('section')[0].style.backgroundColor = 'grey';
+        	document.querySelectorAll('section')[0].style.width = '50%';
+        	document.querySelectorAll('section')[0].style.margin = '0 auto 10px auto';
+        	Object.assign(document.querySelectorAll('section')[0].style,{listStyle:"none",textAlign:"center",color:"white"});
+        	Object.assign(document.querySelector('ul').style,{listStyle:"none"});
+        	document.querySelector('ul').innerHTML = '<li>DRAWING</li><li>SHOOTING</li><li>CODING</li>'
+        	Object.assign(document.querySelector('ol').style,{listStyle:"none"});
+        	document.querySelector('ol').innerHTML = '<li>Unknown Academy</li><li>Hack Academy</li>'
+        	document.querySelectorAll('h2')[0].innerHTML = 'Your Features'
+        	document.querySelectorAll('h2')[0].style.color = 'white'
+        	document.querySelectorAll('h2')[1].style.color = 'white'
+        	document.querySelectorAll('h2')[1].innerHTML = 'Come From'
+        	document.querySelectorAll('h2')[2].innerHTML = 'Worker'
+        	document.querySelectorAll('h2')[2].style.color = 'white'
+        	Object.assign(document.querySelector('table').style,{margin:"auto",border:"1px solid white",textAlign:"center",color:"white"});
+        	Object.assign(document.querySelectorAll('td')[0].style,{border:"1px solid white",textAlign:"center",color:"white"});
+        	document.querySelectorAll('td')[0].innerHTML = '1';
+        	document.querySelectorAll('td')[1].innerHTML = '2';
+        	document.querySelectorAll('td')[2].innerHTML = '3';
+        	document.querySelectorAll('td')[3].innerHTML = '4';
+        	document.querySelectorAll('td')[4].innerHTML = '5';
+        	document.querySelectorAll('td')[5].innerHTML = '6';
+        	Object.assign(document.querySelectorAll('td')[1].style,{border:"1px solid white",textAlign:"center",color:"white"});
+        	Object.assign(document.querySelectorAll('td')[2].style,{border:"1px solid white",textAlign:"center",color:"white"});
+        	Object.assign(document.querySelectorAll('td')[3].style,{border:"1px solid white",textAlign:"center",color:"white"});
+        	Object.assign(document.querySelectorAll('td')[4].style,{border:"1px solid white",textAlign:"center",color:"white"});
+        	Object.assign(document.querySelector('tr').style,{border:"1px solid white",textAlign:"center",color:"white"});
+        	document.querySelectorAll('img')[1].src = 'https://freeiconshop.com/wp-content/uploads/edd/person-flat.png';
+        	Object.assign(document.querySelectorAll('section')[0].style,{border:"none",textAlign:"center",color:"white"});
+        	Object.assign(document.querySelectorAll('section')[1].style,{border:"none",textAlign:"center",color:"white"});
+        	var head  = document.getElementsByTagName('head')[0];
+		    var link  = document.createElement('link');
+		    link.rel  = 'stylesheet';
+		    link.type = 'text/css';
+		    link.href = 'https://fonts.googleapis.com/css?family=Lato';
+		    link.media = 'all';
+		    head.appendChild(link);
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
+
+
+

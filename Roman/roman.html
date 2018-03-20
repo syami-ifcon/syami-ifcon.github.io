@@ -1,0 +1,34 @@
+<html>
+<title>ROMAN</title>
+<body>
+<script>
+var name = prompt("Please enter a number");
+var converted = '';
+var i = 0;
+while(i == 0) {
+  if( isNaN(name) ){
+    name = prompt("I asked for a number, not gibberish! Please enter a number again");
+    i = 0;
+  } else {
+    converted = romanize(name);
+    alert("Your number " + name + " in Roman days would have been " + converted);
+    i = 1;
+  }
+}
+
+function romanize(num) {
+  var lookup = {M:1000,D:500,C:100,L:50,X:10,IX:9,VI:6,V:5,IV:4,I:1};
+  var roman = '';
+  var i;
+  for ( i in lookup ) {
+    while ( num >= lookup[i] ) {
+      roman += i;
+      num -= lookup[i];
+    }
+  }
+  return roman;
+}
+</script>
+</body>
+</html>
+

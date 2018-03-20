@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random</title>
+</head>
+<style type="text/css">
+   a {
+    color: inherit;
+    text-decoration: none;
+   }
+ </style>
+
+<body style="background-color: black;color: white;text-align: center;">
+		<nav style="text-align: center;">
+		<ul style="list-style: none;display: flex;justify-content: center;">
+			<a href="../index.html"><li style="margin-right: 5px">Home</li></a>
+			<a href="../about.html"><li style="margin: 0 5px">About</li></a>
+			<a href="../project.html"><li style="margin: 0 5px">Project</li></a>
+		</ul>
+	</nav>
+	<hr>
+
+	<div>
+		<h2 id="pet1"></h2>
+		<h2 id="pet2"></h2>
+		<h2 id="pet3"></h2>
+	</div>
+
+<script type="text/javascript">
+	function randomNum(minVal, maxVal) {
+do {
+r = Math.random();
+} while (r == 1);
+return minVal+Math.floor(r*(maxVal-minVal));
+}
+var coolwords = new Array();
+coolwords[0] = 'cat';
+coolwords[1] = 'not cat';
+coolwords[2] = 'dog';
+coolwords[3] = 'not dog';
+coolwords[4] = 'alien';
+coolwords[5] = 'Ghost';
+coolwords[6] = 'not Ghost';
+coolwords[7] = 'mom';
+coolwords[8] = 'not mom';
+coolwords[9] = 'anything';
+
+one = coolwords[randomNum(8, 10)];
+two = coolwords[randomNum(5, 7)];
+three = coolwords[randomNum(1, 4)];
+// console.log(one);
+// console.log(two);
+document.querySelector('#pet1').innerHTML = one;
+document.querySelector('#pet2').innerHTML = two;
+document.querySelector('#pet3').innerHTML = three;
+
+
+// document.body.innerHTML = coolwords[randomNum(8, coolwords.length-1)];
+
+</script>
+</body>
+</html>
