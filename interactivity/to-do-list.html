@@ -47,24 +47,58 @@
 	die = document.getElementById('die-list');
 	want = document.getElementById('list').value ;
 	document.getElementById('list').value = '';
+
+	if(want == ''){
+		alert('Go Die Early!!')
+	} else {
 	close = document.createElement("a");
 	dying = document.createElement("li");
 	span = document.createElement('span');
-	x = document.createTextNode('		' + ' X');
-	span.appendChild(x);
+	x = document.createTextNode('X');
 	nope = document.createTextNode(want);      
-	close.appendChild(nope);
-	close.appendChild(span);                           
+	span.appendChild(nope);
+	span.contentEditable = 'true';
+	close.appendChild(x);
 	dying.appendChild(close);
+	dying.appendChild(span)
 	die.appendChild(dying);
 
 
-	span.onclick = function(){
+	close.onclick = function(){
 		shit = this.parentElement;
 		shit.style.display = "none";
 	}
 
+	close.href = '#' 
+
+	// span.onclick = function(){
+	// 	input = document.createElement('input');
+	// 	input.type = 'text';
+	// 	this.parentElement = input;
+	// }
+
+	// span.onclick = function(){
+	// 	// span.style.display = 'none';
+	// 	di = this.parentElement;
+	// 	dis.style.backgroundColor = 'red';
+	// 	shit = span.innerHTML;
+
+
+	// 	box = document.createElement('input');
+	// 	box.type = "text";
+ //        box.value = shit;
+ //        box.size = Math.max(shit.length / 4 * 3, 4);
+ //        span.parentNode.insertBefore(this.parentElement, box);
+
+	// }
+
+}
+
+
 	}
+
+
+
 
 		
 </script>
